@@ -56,7 +56,7 @@ def get_telegram_user():
         }
     except (KeyError, IndexError): # Обработка отсутствующих параметров
         st.error("Ошибка получения данных пользователя. Проверьте URL.")
-        return {'name': 'Anonymous', 'user_id': None, 'auth_date': None}
+        return {'name': 'Anonymous', 'user_id': 12345, 'auth_date': None}
 
 
 if 'clicks' not in st.session_state:
